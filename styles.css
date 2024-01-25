@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: hsl(0, 0%, 8%);
+}
+
+@font-face {
+    font-family: 'Inter-VariableFont';
+    src: url('assets/fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url('assets/fonts/static/Inter-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url('assets/fonts/static/Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-Semibold';
+    src: url('assets/fonts/static/Inter-SemiBold.ttf') format('truetype');
+}
+
+.container {
+    background-color: hsl(0, 0%, 8%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: auto;
+}
+
+.container > .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.profile > img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin: 5px;
+    padding: 5px;
+}
+
+.profile > h1 {
+    color:  hsl(0, 0%, 100%);
+    font-family: 'Inter-Semibold', sans-serif;
+    text-align: center;
+    padding: 5px;
+    font-size: 24px;
+}
+
+.profile > h3 {
+    color: hsl(33, 4%, 80%);
+    font-family: 'Inter', sans-serif;
+    padding: 5px;
+    font-size: 16px
+}
+
+.profile > p {
+    color:  hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.container > .link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.link > a {
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+    padding: 15px;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    width: 300px;
+    height: 20px;
+    background-color: hsl(0, 0%, 20%);
+    border-radius: 10px;
+    transition: background-color 0.5 ease;
+}
+
+a:hover {
+    background-color : hsl(33, 4%, 80%);
+    color: hsl(0, 0%, 8%);
+}
+
+@media (max-width: 375px){
+    .container{
+        width: 90%;
+    }
+    .link > a{
+        width: 100%;
+    }
+}
+
+@media (min-width: 1441px){
+    .container{
+        width: 50%;
+    }
+}
